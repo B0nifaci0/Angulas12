@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HeaderComponent } from './Components/shared/header/header.component';
 @NgModule({
+  //se declrar los componente que queremos exportat
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
+  //se importan los modulos de nuestra apliacacion
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
+  //se inyentan dependencias
   providers: [],
   bootstrap: [AppComponent]
 })
