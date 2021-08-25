@@ -8,6 +8,7 @@ import { HeaderComponent } from './Components/shared/header/header.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DominicodeComponent } from './Pages/domicode/dominicode/dominicode.component';
+import { HttpClientModule }  from '@angular/common/http';
 @NgModule({
   //se declrar los componente que queremos exportat
   declarations: [
@@ -21,7 +22,8 @@ import { DominicodeComponent } from './Pages/domicode/dominicode/dominicode.comp
     AppRoutingModule,
     MaterialModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   //se inyentan dependencias
   providers: [],
