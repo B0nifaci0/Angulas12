@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/shared/header/header.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DominicodeComponent } from './Pages/domicode/dominicode/dominicode.component';
 @NgModule({
   //se declrar los componente que queremos exportat
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    DominicodeComponent
   ],
   //se importan los modulos de nuestra apliacacion
   imports: [

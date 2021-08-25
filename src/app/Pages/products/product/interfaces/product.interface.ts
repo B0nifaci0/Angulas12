@@ -1,0 +1,11 @@
+//exportamos nuestra interfac
+export interface product {
+    id: number;
+    name: string;
+    price: number;
+    description:string;
+    categoryId: number;
+    stock: number;
+
+
+}
