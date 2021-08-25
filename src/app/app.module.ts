@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/shared/header/header.component';
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   //se declrar los componente que queremos exportat
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './Components/shared/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    MaterialModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   //se inyentan dependencias
   providers: [],
