@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 // mandamos a llamar a nustro sericie
 import { Product } from './product/interfaces/product.interface';
+//importamos el service
+import { ProductsService } from './services/products.service';
 
 //importamos tap
 import {tap} from 'rxjs/operators';
-//importamos el service
-import { ProductsService } from './services/products.service';
 
 @Component({
   selector: 'app-products',

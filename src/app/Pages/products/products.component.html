@@ -1,4 +1,17 @@
  <!-- utilizamo pipe nos ayudan a transformar data -->
- <pre>
+ <!-- pre>
     {{ products | json}}
- </pre>
+ </pre> -->
+
+
+ <section class="produts">
+    <!-- ngfor iteremos los productos para mostarlos -->
+     <mat-card class="card" *ngFor="let product of products">
+        <!-- interpolamos product.name es decir acedemos a los valores de nuestro json endpoint -->
+     <mat-card-header>{{product.name}}</mat-card-header>
+     <mat-card-content>{{product.description}}</mat-card-content>
+      <mat-card-actions>
+         <button mat-flat-button color="primary">Buy {{product.price | currency}} <mat-icon>add_shopping_cart</mat-icon></button>
+      </mat-card-actions>
+    </mat-card>
+ </section>
